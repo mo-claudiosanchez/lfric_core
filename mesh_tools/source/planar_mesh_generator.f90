@@ -597,8 +597,8 @@ program planar_mesh_generator
     write( log_scratch_space,'(A)') &
         'Domain centre [x,y]: ['
   end if
-  write( x_str,'(F10.6)' ) domain_centre(1)
-  write( y_str,'(F10.6)' ) domain_centre(2)
+  write( x_str,'(F10.2)' ) domain_centre(1)
+  write( y_str,'(F10.2)' ) domain_centre(2)
 
   write( log_scratch_space, '(A)' ) trim(log_scratch_space) // &
       trim(adjustl(x_str)) // ',' // trim(adjustl(y_str)) // ']'
